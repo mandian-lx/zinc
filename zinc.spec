@@ -1,8 +1,10 @@
 %{?_javapackages_macros:%_javapackages_macros}
+
 Name:           zinc
 Version:        0.3.1
-Release:        3%{?dist}
+Release:        4.1
 Summary:        Incremental scala compiler
+Group:		Development/Java
 License:        ASL 2.0
 URL:            https://github.com/typesafehub/zinc
 BuildArch:      noarch
@@ -49,6 +51,9 @@ jar cf zinc.jar com
 %doc LICENSE.txt
 
 %changelog
+* Thu Jul 27 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild
+
 * Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0.3.1-3
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
 
@@ -57,3 +62,4 @@ jar cf zinc.jar com
 
 * Wed Dec  2 2015 Mikolaj Izdebski <mizdebsk@redhat.com> - 0.3.1-1
 - Initial packaging
+
